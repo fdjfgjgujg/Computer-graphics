@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<graphics.h>
+#include<math.h>
 #include<dos.h>
 int main(){
 	int r,x,y, gd=DETECT,gm;
@@ -12,13 +13,13 @@ int main(){
 	y=r;
 	d=1-r;
 	do{
-		putpixel(350+x,350+y,BLUE);
+		putpixel(350+x,350+y,GREEN);
 		putpixel(350+x,350-y,RED);
 		putpixel(350+y,350-x,YELLOW);
 		putpixel(350-y,350-x,WHITE);
 		putpixel(350-x,350-y,BLUE);
 		putpixel(350-x,350+y,YELLOW);
-		putpixel(350-y,350+x,RED);
+		putpixel(350-y,350+x,CYAN);
 		putpixel(350+y,350+x,WHITE);
 		if(d<0){
 			x=x+1;
